@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins';
-  overflow: hidden;
 }
 body{
   display: flex;
@@ -18,16 +17,61 @@ body{
   left: 0;
   object-fit: fill;
 }
+
 .content{
-  position: relative;
-  width: 30%;
-  border-radius: 15px;
+  width: 18%;
   padding: 5px;
+  justify-content: center;
   align-content: center;
   display: inline-grid;
+  background: rgb(32,55,209);
+  background: linear-gradient(180deg, rgba(32,55,209,1) 36%, rgba(255,255,255,0) 100%);
+}
+
+.topContent{
+  position: absolute;
+}
+#logo{
+align-self: center;
+}
+.dt{
+  text-align: center;
+  border-style: solid;
+  border-color: transparent;
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  
+}
+#date{
+  padding-top: 5px;
+}
+#datetime{
+  padding-top:5px;
+  padding-left: 0;
+}
+.weather{
+  border-style: solid;
+  border-color: transparent;
+  margin-bottom: 10vh;
+  color:white;
+  display: flex;
+  justify-content: center;
+}
+.temp{
+  margin: auto;
+}
+.icon{
+  width: 4vw;
 }
 #Music{
-  background-color:#60666b;
+  height: 50vh;
+  position: relative;
+  z-index: 1;
+  border-style: solid;
+  border-color: transparent;
+  width:min-content;
+  padding-top: 25vh;
 }
 .material-symbols-rounded{
   cursor: pointer;
@@ -35,11 +79,13 @@ body{
 .music-titles{
   text-align: center;
   margin: 30px 0;
-  color: #4d4d4d;
+  color: black;
+
 }
 
 .music-titles .name{
-  font-size: 19px;
+  font-size: 200%;
+  font-weight: 100%;
 }
 
 .music-titles .artist{
@@ -89,9 +135,12 @@ body{
   margin-top: 2px;
   color: #4d4d4d;
 }
-
+.conrtols{
+  position:relative;
+  bottom: 10px;
+}
 .control-btn{
-  margin-top: 50px;
+  margin-top: 20px;
   margin-bottom: 20px;
   display: flex;
   align-items: center;
@@ -112,4 +161,95 @@ body{
 .control-btn span:active{
   box-shadow: inset 6px 6px 10px -1px rgba(0,0,0,0.15),
   inset -6px -6px 10px -1px rgba(255,255,255,0.7);
+}
+
+@media (max-width: 1024px) {
+  .content{
+    background:transparent;
+    position: fixed;
+    width: 100%;
+    justify-content: unset;
+    height:23vh;
+    background: rgb(32,55,209);
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 2%, rgba(32,55,209,.8) 50%, rgba(255,255,255,0) 100%);
+  }
+  .video{
+    width: 100vw;
+  }
+  .topContent{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+  }
+  #logo{
+    position: fixed;
+    bottom: 0px;
+  }
+  .dt{
+    text-align: center;
+    border-style: solid;
+    border-color: transparent;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    position: fixed;
+    bottom: 7vh;  
+    padding-left: 25vw;
+  }
+  #date{
+    padding-top: 5px;
+  }
+  #datetime{
+    padding-top:5px;
+    padding-left: 0;
+  }
+  #Music{
+    position: fixed;
+    right:0px;
+    bottom: 0px;
+  }
+  .music-titles{
+    text-align: center;
+    margin: 30px 0;
+    color: white;
+  
+  }
+  .music-titles .name{
+    font-size: 110%;
+    font-weight: 100%;
+  }
+  
+  .music-titles .artist{
+    font-size: 17px;
+    margin-top: 3px;
+    opacity: 0.9;
+  }
+  .control-btn span{
+    color: white;
+  }
+  .time{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2px;
+    color: white;
+  }
+  .weather{
+    border-style: solid;
+    border-color: transparent;
+    margin-bottom: 0vh;
+    color:white;
+    display:block;
+    justify-self:center;
+    position: fixed;
+    bottom: 5vh;
+    padding-left: 50vw;
+  }
+  .temp{
+    margin: auto;
+  }
+  .icon{
+    width: 4vw;
+  }
 }

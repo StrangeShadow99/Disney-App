@@ -23,6 +23,8 @@ function loadData(indexValue){
   Audio.src = "music/"+songs[indexValue - 1].audio+".mp3";
 }
 
+
+
 playBtn.addEventListener("click", ()=>{
   const isMusicPaused = content.classList.contains("paused");
   if(isMusicPaused){
@@ -44,6 +46,8 @@ function pauseSong(){
   playBtnIcon.innerHTML = "play_arrow";
   Audio.pause();
 }
+
+
 
 nextBtn.addEventListener("click", ()=>{
   nextSong();
