@@ -163,7 +163,7 @@ align-self: center;
   inset -6px -6px 10px -1px rgba(255,255,255,0.7);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 2224px) {
   .content{
     background:transparent;
     position: fixed;
@@ -172,7 +172,7 @@ align-self: center;
     height:23vh;
     background: rgb(32,55,209);
     bottom: 0;
-    background: linear-gradient(180deg, rgba(0,0,0,0) 2%, rgba(32,55,209,.8) 50%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,0) 2%, rgba(32,55,209,.8) 100%);
   }
   .video{
     width: 100vw;
@@ -185,16 +185,17 @@ align-self: center;
   #logo{
     position: fixed;
     bottom: 0px;
+    width: 18vw;
   }
   .dt{
     text-align: center;
     border-style: solid;
     border-color: transparent;
     color: white;
-    font-size: 25px;
+    font-size: 2vw;
     font-weight: 600;
     position: fixed;
-    bottom: 7vh;  
+    bottom: 5vh;  
     padding-left: 25vw;
   }
   #date{
@@ -207,7 +208,11 @@ align-self: center;
   #Music{
     position: fixed;
     right:0px;
-    bottom: 0px;
+    bottom: 5vh;
+    padding-top: 0px;
+    height: 10vh;
+    padding-right: 5vw;
+    width: 20vw;
   }
   .music-titles{
     text-align: center;
@@ -216,17 +221,18 @@ align-self: center;
   
   }
   .music-titles .name{
-    font-size: 110%;
+    font-size: 2vw;
     font-weight: 100%;
   }
   
   .music-titles .artist{
-    font-size: 17px;
+    font-size: 1vw;
     margin-top: 3px;
     opacity: 0.9;
   }
   .control-btn span{
     color: white;
+    font-size: 2vw;
   }
   .time{
     display: flex;
@@ -243,8 +249,9 @@ align-self: center;
     display:block;
     justify-self:center;
     position: fixed;
-    bottom: 5vh;
+    bottom: 4vh;
     padding-left: 50vw;
+    font-size: 1.5vw;
   }
   .temp{
     margin: auto;
