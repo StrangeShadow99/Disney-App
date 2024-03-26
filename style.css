@@ -208,15 +208,15 @@ align-self: center;
   #Music{
     position: fixed;
     right:0px;
-    bottom: 5vh;
+    bottom: 7vh;
     padding-top: 0px;
     height: 10vh;
     padding-right: 5vw;
-    width: 20vw;
+    width: 30vw;
   }
   .music-titles{
     text-align: center;
-    margin: 30px 0;
+    margin: 10px 0;
     color: white;
   
   }
@@ -233,6 +233,13 @@ align-self: center;
   .control-btn span{
     color: white;
     font-size: 2vw;
+  }
+  .control-btn{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   .time{
     display: flex;
