@@ -178,6 +178,7 @@ align-self: center;
   .video{
     width: 100vw;
     height:100vh;
+    position: fixed;
   }
   .topContent{
     position: absolute;
