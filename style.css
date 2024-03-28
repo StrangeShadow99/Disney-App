@@ -177,7 +177,7 @@ align-self: center;
   }
    .video{
     width: 100vw;
-    height: 806px;
+    height: 100vh;
     position: fixed;
   }
   .topContent{
