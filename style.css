@@ -175,7 +175,7 @@ align-self: center;
     background: linear-gradient(180deg, rgba(0,0,0,0) 2%, rgba(32,55,209,.8) 100%);
     overflow: hidden;
   }
-   .video{
+  .video{
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -210,12 +210,12 @@ align-self: center;
   }
   #Music{
     position: fixed;
-    right:0px;
-    bottom: 7vh;
+    right: 0px;
+    bottom: 15vh;
     padding-top: 0px;
     height: 10vh;
     padding-right: 5vw;
-    width: 30vw;
+    width: 35vw;
   }
   .music-titles{
     text-align: center;
@@ -259,7 +259,7 @@ align-self: center;
     display:block;
     justify-self:center;
     position: fixed;
-    bottom: 4vh;
+    bottom: 3vh;
     padding-left: 50vw;
     font-size: 1.5vw;
   }
