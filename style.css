@@ -171,11 +171,12 @@ align-self: center;
     justify-content: unset;
     height:23vh;
     background: rgb(32,55,209);
+    bottom: 0;
     background: linear-gradient(180deg, rgba(0,0,0,0) 2%, rgba(32,55,209,.8) 100%);
     overflow: hidden;
   }
   .video{
-    width: 90vw;
+    width: 100vw;
     height: 834px;
     position: fixed;
   }
